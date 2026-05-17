@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Il tuo biglietto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Passions+Conflict&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="scripts.js" defer></script>
+    <script src="form.js" defer></script>
+    <script src="poster.js" defer></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h3>Il tuo biglietto</h3>
+      <p>
+        Per il tuo compleanno ho pensato di regalarti un biglietto per uno
+        spettacolo di danza a Dublino, così potremo passare una giornata insieme
+        e festeggiare come si deve!
+      </p>
+
+      <p>
+        Scegli tu quale spettacolo preferisci, basta cliccare sulle frecce per
+        scorrere le opzioni. Una volta scelto, clicca sul biglietto per
+        visualizzare i dettagli e scaricarlo.
+      </p>
+
+      <section class="ticket-form-wrapper">
+        <form class="theatre-ticket" id="ticket-form">
+          <div class="ticket-left">
+            <p class="ticket-label">Teatro</p>
+
+            <h2 class="ticket-title">Il tuo biglietto</h2>
+
+            <div class="ticket-field">
+              <label for="show">Spettacolo</label>
+
+              <select id="show" name="show">
+                <option value="riverdance">Riverdance</option>
+
+                <option value="sleeping-beauty">Sleeping Beauty</option>
+              </select>
+            </div>
+
+            <div class="ticket-field">
+              <label for="datetime"> Data & Ora </label>
+
+              <select id="datetime" name="datetime"></select>
+            </div>
+
+            <button type="submit" class="ticket-submit">Conferma ✨</button>
+          </div>
+
+          <div class="ticket-right">
+            <div class="ticket-stub">
+              <p>ROW</p>
+              <span>A</span>
+            </div>
+
+            <div class="ticket-stub">
+              <p>SEAT</p>
+              <span>12</span>
+            </div>
+
+            <div class="ticket-stub">
+              <p>TIME</p>
+              <span id="ticket-time">--:--</span>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <h3>Locandine</h3>
+
+    <section class="ticket-slider">
+      <button class="slider-btn prev">‹</button>
+
+      <div class="slider-track">
+        <article class="ticket-card active">
+          <img src="./assets/riverdance.jpeg" alt="riverdance" />
+          <h3>Gaiety Theatre</h3>
+          <p>17th Jun. - 6th Sep</p>
+          <p>
+            A powerful reinvention of the show that changed Irish dance forever,
+            featuring a reimagined score by Grammy® winner Bill Whelan. From the
+            "Reel Around the Sun" to the iconic "Heartland," experience the
+            precision and athleticism of world-class dancers live in Dublin
+          </p>
+        </article>
+
+        <article class="ticket-card">
+          <img src="./assets/sleeping-beauty.avif" alt="sleeping beauty" />
+          <h3>The O'Reilly Theatre, Dublin</h3>
+          <p>1- 26 Jun 2026</p>
+
+          <p>
+            When the lights dim and the music begins, something extraordinary
+            happens. Ballet of Lights: Sleeping Beauty transforms a timeless
+            tale into a living, glowing spectacle - where every arabesque, every
+            lift, every breathless moment is wrapped in colour and radiance.
+          </p>
+          <p>
+            A beloved story reimagined through classical dance, stunning
+            choreography, and glow-in-the-dark costumes that turn every movement
+            into a radiant display. Six talented dancers bring the magic of
+            Sleeping Beauty to the stage in a unique show that blends classical
+            ballet with modern technology - created by María Farelo and Cristian
+            Pérez of Luma Artistas S.L.
+          </p>
+        </article>
+      </div>
+
+      <button class="slider-btn next">›</button>
+    </section>
+  </body>
+</html>
