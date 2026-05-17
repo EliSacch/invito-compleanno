@@ -9,6 +9,8 @@
 * {
     box-sizing: border-box;
     color: var(--text-color);
+    font-family: var(--font-regular);
+    font-optical-sizing: auto;
 }
 
 body {
@@ -38,6 +40,11 @@ h2 {
 a {
     text-decoration: none;
     margin-top: 50px;
+}
+
+#conf-datetime {
+    font-family: var(--font-regular);
+        font-optical-sizing: auto;
 }
 
 main {
@@ -76,8 +83,6 @@ main {
 
 .ticket-slider {
     position: relative;
-    display: flex;
-    gap: 5px;   
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
@@ -295,12 +300,16 @@ main {
 .ticket-info p {
     opacity: 0.6;
     letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: var(--font-regular);
 }
 
 .ticket-info span {
     font-size: 1.5rem;
     display: block;
     margin-top: 10px;
+    font-family: var(--font-regular);
+    text-transform: uppercase;
 }
 
 /* RIGHT SIDE */
@@ -324,17 +333,20 @@ main {
 
 .ticket-stub {
     text-align: center;
+    font-family: var(--font-regular);
 }
 
 .ticket-stub p {
     font-size: 0.8rem;
     opacity: 0.5;
     margin-bottom: 5px;
+    font-family: var(--font-regular);
 }
 
 .ticket-stub span {
     font-size: 2rem;
     font-weight: 700;
+    font-family: var(--font-regular);
 }
 
 /* MOBILE */
