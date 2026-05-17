@@ -104,6 +104,9 @@ form.addEventListener("submit", (e) => {
     const show = showSelect.value;
     const datetime = datetimeSelect.value;
 
+    localStorage.setItem("show", show);
+    localStorage.setItem("datetime", datetime);
+
     const url = `confirmed.html?show=${encodeURIComponent(show)}&datetime=${encodeURIComponent(datetime)}`;
 
     window.location.href = url;

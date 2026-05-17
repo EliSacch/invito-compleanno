@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Passions+Conflict&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Passions+Conflict&family=Oswald:wght@300;500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -19,6 +19,34 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <section class="ticket-slider">
+      <button class="slider-btn prev">‹</button>
+
+      <div class="slider-track">
+        <article class="ticket-card active">
+          <img src="./assets/riverdance.jpg" alt="riverdance" />
+          <h3>Riverdance</h3>
+
+          <h5>Gaiety Theathre | 17th Jun. - 6th Sep</h5>
+          <p>
+            Una potente reinvenzione dello spettacolo che ha cambiato per sempre
+            la danza irlandese, con una colonna sonora reinventata dal vincitore
+            del Grammy® Bill Whelan. Da “Reel Around the Sun” all’iconica
+            “Heartland”, vivi dal vivo a Dublino la precisione e l’atletismo di
+            ballerini di livello mondiale.
+          </p>
+        </article>
+
+        <article class="ticket-card">
+          <img src="./assets/sleeping-beauty.avif" alt="sleeping beauty" />
+          <h3>Sleeping Beauty</h3>
+          <h5>The O'Reilly Theatre | 26 Jun 2026</h5>
+        </article>
+      </div>
+
+      <button class="slider-btn next">›</button>
+    </section>
+
     <main>
       <h3>Il tuo biglietto</h3>
       <p>
@@ -33,12 +61,46 @@
         visualizzare i dettagli e scaricarlo.
       </p>
 
+      <div class="ticket-wrapper">
+        <div class="ticket">
+          <div class="circle top-left outer-b"></div>
+          <div class="circle bottom-left outer"></div>
+          <div class="circle top-right outer"></div>
+          <div class="circle bottom-right outer"></div>
+
+          <div class="circle top-left inner-b"></div>
+          <div class="circle bottom-left inner-b"></div>
+          <div class="circle top-right inner-b"></div>
+          <div class="circle bottom-right inner-b"></div>
+
+          <div class="inner">
+            <div class="stars">
+              <div class="star">★</div>
+              <div class="star">★</div>
+              <div class="star">★</div>
+            </div>
+
+            <div class="center">
+              <div class="small-text">ADMIT ONE</div>
+
+              <div class="title">TICKET</div>
+
+              <div class="small-text">ADMIT ONE</div>
+            </div>
+
+            <div class="stars">
+              <div class="star">★</div>
+              <div class="star">★</div>
+              <div class="star">★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section class="ticket-form-wrapper">
         <form class="theatre-ticket" id="ticket-form">
           <div class="ticket-left">
             <p class="ticket-label">Teatro</p>
-
-            <h2 class="ticket-title">Il tuo biglietto</h2>
 
             <div class="ticket-field">
               <label for="show">Spettacolo</label>
@@ -56,7 +118,7 @@
               <select id="datetime" name="datetime"></select>
             </div>
 
-            <button type="submit" class="ticket-submit">Conferma ✨</button>
+            <button type="submit" class="ticket-submit">Conferma</button>
           </div>
 
           <div class="ticket-right">
@@ -78,48 +140,5 @@
         </form>
       </section>
     </main>
-
-    <h3>Locandine</h3>
-
-    <section class="ticket-slider">
-      <button class="slider-btn prev">‹</button>
-
-      <div class="slider-track">
-        <article class="ticket-card active">
-          <img src="./assets/riverdance.jpeg" alt="riverdance" />
-          <h3>Gaiety Theatre</h3>
-          <p>17th Jun. - 6th Sep</p>
-          <p>
-            A powerful reinvention of the show that changed Irish dance forever,
-            featuring a reimagined score by Grammy® winner Bill Whelan. From the
-            "Reel Around the Sun" to the iconic "Heartland," experience the
-            precision and athleticism of world-class dancers live in Dublin
-          </p>
-        </article>
-
-        <article class="ticket-card">
-          <img src="./assets/sleeping-beauty.avif" alt="sleeping beauty" />
-          <h3>The O'Reilly Theatre, Dublin</h3>
-          <p>1- 26 Jun 2026</p>
-
-          <p>
-            When the lights dim and the music begins, something extraordinary
-            happens. Ballet of Lights: Sleeping Beauty transforms a timeless
-            tale into a living, glowing spectacle - where every arabesque, every
-            lift, every breathless moment is wrapped in colour and radiance.
-          </p>
-          <p>
-            A beloved story reimagined through classical dance, stunning
-            choreography, and glow-in-the-dark costumes that turn every movement
-            into a radiant display. Six talented dancers bring the magic of
-            Sleeping Beauty to the stage in a unique show that blends classical
-            ballet with modern technology - created by María Farelo and Cristian
-            Pérez of Luma Artistas S.L.
-          </p>
-        </article>
-      </div>
-
-      <button class="slider-btn next">›</button>
-    </section>
   </body>
 </html>

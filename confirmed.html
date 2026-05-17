@@ -5,22 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conferma</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&family=Passions+Conflict&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="scripts.js"></script>
+
     <script src="confirmed.js" defer></script>
 
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="test">
+    <main>
       <h1>Confermato</h1>
 
-      <p>Inviamo uno screenshot di questo biglietto</p>
+      <p>Inviami uno screenshot di questo biglietto</p>
 
-      <div class="confirmed-ticket">
-        <p class="ticket-label">SPETTACOLO</p>
+      <div class="ticket-wrapper">
+        <div class="ticket">
+          <div class="circle top-left outer-b"></div>
+          <div class="circle bottom-left outer"></div>
+          <div class="circle top-right outer"></div>
+          <div class="circle bottom-right outer"></div>
 
-        <p id="conf-show">---</p>
+          <div class="circle top-left inner-b"></div>
+          <div class="circle bottom-left inner-b"></div>
+          <div class="circle top-right inner-b"></div>
+          <div class="circle bottom-right inner-b"></div>
 
-        <div class="ticket-info">
+          <div class="inner">
+            <div class="stars">
+              <div class="star">★</div>
+              <div class="star">★</div>
+              <div class="star">★</div>
+            </div>
+
+            <div class="center">
+              <div class="small-text">ADMIT ONE</div>
+
+              <div class="title">TICKET</div>
+
+              <div class="small-text">ADMIT ONE</div>
+            </div>
+
+            <div class="stars">
+              <div class="star">★</div>
+              <div class="star">★</div>
+              <div class="star">★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="theatre-ticket">
+        <div class="theatre-left">
+          <br />
+          <p class="ticket-label">SPETTACOLO</p>
+
+          <p id="conf-show">---</p>
+
+          <br />
+        </div>
+
+        <div class="ticket-right">
           <div>
             <p>DATA & ORA</p>
             <span id="conf-datetime">--:--</span>
@@ -29,6 +78,6 @@
       </div>
     </main>
 
-    <script src="confirmed.js"></script>
+    <button id="modifica">>> Ho cambiato idea <<</button>
   </body>
 </html>
